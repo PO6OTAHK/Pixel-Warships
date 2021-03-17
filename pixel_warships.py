@@ -38,7 +38,7 @@ class PixelWarships:
     def openMenu(self):
         'Открытие меню игры'
         import menu.menu
-        menu.menu.start(self)
+        menu.menu.init(self)
 
     def startGame(self):
         'Запуск игровой сессии'

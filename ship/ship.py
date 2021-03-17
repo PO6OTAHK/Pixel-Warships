@@ -14,7 +14,11 @@ class Ship(pygame.sprite.Sprite):
                     'down': game_instance.pygame.image.load('ship/Textur/ShipV01down.png'),
         }
         self.HP = HP
+<<<<<<< HEAD
         self.image = game_instance.pygame.transform.scale(self.ship_image['right'], (64, 34))
+=======
+        self.image = self.ship_image['right']
+>>>>>>> 8421f07c1f3349d84d8c6ea3b2e0b1e50d2bc16b
         self.is_alive = True
         self.speed = speed
         self.objectt = objectt
@@ -23,10 +27,18 @@ class Ship(pygame.sprite.Sprite):
         self.rect = self.image.get_rect().move(64 * self.x, 34 * self.y)
     
     def changeState(self, state):
+<<<<<<< HEAD
         if state == 'up' or state == 'down':
             self.image = game_instance.pygame.transform.scale(self.ship_image[state], (34, 64))
         else:
             self.image = game_instance.pygame.transform.scale(self.ship_image[state], (64, 34))
+=======
+        self.image = self.ship_image[state]
+        # if state == 'up' or state == 'down':
+        #     self.image = game_instance.pygame.transform.scale(self.ship_image[state], (34, 64))
+        # else:
+        #     self.image = game_instance.pygame.transform.scale(self.ship_image[state], (64, 34))
+>>>>>>> 8421f07c1f3349d84d8c6ea3b2e0b1e50d2bc16b
 
     def hit(self, damage):
         pass

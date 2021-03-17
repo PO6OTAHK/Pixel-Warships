@@ -2,7 +2,11 @@ def createMenu(game_instance, screen):
     engine = game_instance.pygame_menu.sound.Sound()
     engine.set_sound(game_instance.pygame_menu.sound.SOUND_TYPE_CLICK_MOUSE, 'menu/menu_click.ogg')
     background_image = game_instance.pygame_menu.baseimage.BaseImage(
+<<<<<<< HEAD
             image_path='image/kon1.jpg',
+=======
+            image_path='menu/kon1.jpg',
+>>>>>>> 8421f07c1f3349d84d8c6ea3b2e0b1e50d2bc16b
             drawing_mode=game_instance.pygame_menu.baseimage.IMAGE_MODE_REPEAT_XY,
             drawing_offset=(0,0)
     )
@@ -35,6 +39,6 @@ def createMenu(game_instance, screen):
     menu.mainloop(screen)
 
 
-def start(game_instance):
+def init(game_instance):
     createMenu(game_instance, game_instance.getScreen())
     
